@@ -1,6 +1,6 @@
 # Heel-mounted IMU stride-length validation
 
-Private submission-staging repository: <https://github.com/pkudzia/IMU-Paper-1>
+Private submission-staging repository: <https://github.com/pkudzia/manuscript-heel-imu-stride-length-validation>
 
 Code and manuscript for:
 
