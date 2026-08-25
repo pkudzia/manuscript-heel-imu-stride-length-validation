@@ -1,0 +1,235 @@
+\begin{thebibliography}{}
+
+\bibitem[Arens et~al., 2021]{Arens2021}
+Arens, P., Siviy, C., Bae, J., Choe, D.~K., Karavas, N., Baker, T., Ellis,
+  T.~D., Awad, L.~N., and Walsh, C.~J. (2021).
+\newblock Real-time gait metric estimation for everyday gait training with
+  wearable devices in people poststroke.
+\newblock {\em Wearable Technologies}, 2:e2.
+
+\bibitem[Beauchet et~al., 2005]{Beauchet2005}
+Beauchet, O., Dubost, V., Herrmann, F.~R., and Kressig, R.~W. (2005).
+\newblock Stride-to-stride variability while backward counting among healthy
+  young adults.
+\newblock {\em Journal of NeuroEngineering and Rehabilitation}, 2:26.
+
+\bibitem[Bland and Altman, 1986]{Bland1986}
+Bland, J.~M. and Altman, D.~G. (1986).
+\newblock Statistical methods for assessing agreement between two methods of
+  clinical measurement.
+\newblock {\em The Lancet}, 327(8476):307--310.
+
+\bibitem[Boutaayamou et~al., 2025]{Boutaayamou2025}
+Boutaayamou, M., Pelzer, D., Schwartz, C., Gillain, S., Garraux, G., Croisier,
+  J.-L., Verly, J.~G., and Br{\"u}ls, O. (2025).
+\newblock Toward convenient and accurate {IMU}-based gait analysis.
+\newblock {\em Sensors}, 25(4):1267.
+
+\bibitem[Bytyçi and Henein, 2021]{Bytyci2021}
+Bytyçi, I. and Henein, M.~Y. (2021).
+\newblock Stride length predicts adverse clinical events in older adults: A
+  systematic review and meta-analysis.
+\newblock {\em Journal of Clinical Medicine}, 10(12):2670.
+
+\bibitem[Commandeur et~al., 2018]{Commandeur2018}
+Commandeur, D., Klimstra, M.~D., MacDonald, S., Inouye, K., Cox, M., Chan, D.,
+  and Hundza, S.~R. (2018).
+\newblock Difference scores between single-task and dual-task gait measures are
+  better than clinical measures for detection of fall-risk in
+  community-dwelling older adults.
+\newblock {\em Gait \& Posture}, 66:155--159.
+
+\bibitem[Ensink et~al., 2023]{Ensink2023}
+Ensink, C., Smulders, K., Warnar, J., and Keijsers, N. (2023).
+\newblock Validation of an algorithm to assess regular and irregular gait using
+  inertial sensors in healthy and stroke individuals.
+\newblock {\em PeerJ}, 11:e16641.
+
+\bibitem[Foxlin, 2005]{Foxlin2005}
+Foxlin, E. (2005).
+\newblock Pedestrian tracking with shoe-mounted inertial sensors.
+\newblock {\em IEEE Computer Graphics and Applications}, 25(6):38--46.
+
+\bibitem[Greene et~al., 2010]{Greene2010}
+Greene, B.~R., McGrath, D., O'Neill, R., O'Donovan, K.~J., Burns, A., and
+  Caulfield, B. (2010).
+\newblock An adaptive gyroscope-based algorithm for temporal gait analysis.
+\newblock {\em Medical \& Biological Engineering \& Computing},
+  48(12):1251--1260.
+
+\bibitem[Hannink et~al., 2017]{Hannink2017}
+Hannink, J., Ollenschl{\"a}ger, M., Kluge, F., Roth, N., Klucken, J., and
+  Eskofier, B.~M. (2017).
+\newblock Benchmarking foot trajectory estimation methods for mobile gait
+  analysis.
+\newblock {\em Sensors}, 17(9):1940.
+
+\bibitem[Hausdorff et~al., 2008]{Hausdorff2008}
+Hausdorff, J.~M., Schweiger, A., Herman, T., Yogev-Seligmann, G., and Giladi,
+  N. (2008).
+\newblock Dual-task decrements in gait: Contributing factors among healthy
+  older adults.
+\newblock {\em The Journals of Gerontology Series A: Biological Sciences and
+  Medical Sciences}, 63(12):1335--1343.
+
+\bibitem[Kottner et~al., 2011]{Kottner2011}
+Kottner, J., Audig{\'e}, L., Brorson, S., Donner, A., Gajewski, B.~J.,
+  Hr{\'o}bjartsson, A., Roberts, C., Shoukri, M., and Streiner, D.~L. (2011).
+\newblock Guidelines for reporting reliability and agreement studies ({GRRAS})
+  were proposed.
+\newblock {\em Journal of Clinical Epidemiology}, 64(1):96--106.
+
+\bibitem[K{\"u}derle et~al., 2022]{Kuderle2022}
+K{\"u}derle, A., Roth, N., Zlatanovic, J., Zrenner, M., Eskofier, B., and
+  Kluge, F. (2022).
+\newblock The placement of foot-mounted {IMU} sensors does affect the accuracy
+  of spatial parameters during regular walking.
+\newblock {\em PLOS ONE}, 17(6):e0269567.
+
+\bibitem[Laidig et~al., 2021]{Laidig2021}
+Laidig, D., Jocham, A.~J., Guggenberger, B., Adamer, K., Fischer, M., and Seel,
+  T. (2021).
+\newblock Calibration-free gait assessment by foot-worn inertial sensors.
+\newblock {\em Frontiers in Digital Health}, 3:736418.
+
+\bibitem[Li et~al., 2023]{Li2023}
+Li, H., Liu, H., Li, Z., Li, C., Meng, Z., Gao, N., and Zhang, Z. (2023).
+\newblock Adaptive threshold-based {ZUPT} for single {IMU}-enabled wearable
+  pedestrian localization.
+\newblock {\em IEEE Internet of Things Journal}, 10(13):11749--11760.
+
+\bibitem[Lin et~al., 2025]{Lin2025}
+Lin, S., Evans, K., Hartley, D., Morrison, S., McDonald, S., Veidt, M., and
+  Wang, G. (2025).
+\newblock A review of gait analysis using gyroscopes and inertial measurement
+  units.
+\newblock {\em Sensors}, 25(11):3481.
+
+\bibitem[Luo et~al., 2024]{Luo2024}
+Luo, B., Wang, Z., Wang, D., Chen, L., and Ma, X. (2024).
+\newblock Algorithm for gait parameters estimation based on heel-mounted
+  inertial sensors.
+\newblock {\em IEEE Sensors Journal}, 24(15):24723--24736.
+
+\bibitem[Mahony et~al., 2008]{Mahony2008}
+Mahony, R., Hamel, T., and Pflimlin, J.-M. (2008).
+\newblock Nonlinear complementary filters on the special orthogonal group.
+\newblock {\em IEEE Transactions on Automatic Control}, 53(5):1203--1218.
+
+\bibitem[Maki, 1997]{Maki1997}
+Maki, B.~E. (1997).
+\newblock Gait changes in older adults: Predictors of falls or indicators of
+  fear?
+\newblock {\em Journal of the American Geriatrics Society}, 45(3):313--320.
+
+\bibitem[Mariani et~al., 2010]{Mariani2010}
+Mariani, B., Hoskovec, C., Rochat, S., B{\"u}la, C., Penders, J., and Aminian,
+  K. (2010).
+\newblock 3d gait assessment in young and elderly subjects using foot-worn
+  inertial sensors.
+\newblock {\em Journal of Biomechanics}, 43(15):2999--3006.
+
+\bibitem[Montero-Odasso et~al., 2012]{Montero-Odasso2012}
+Montero-Odasso, M., Verghese, J., Beauchet, O., and Hausdorff, J.~M. (2012).
+\newblock Gait and cognition: A complementary approach to understanding brain
+  function and the risk of falling.
+\newblock {\em Journal of the American Geriatrics Society}, 60(11):2127--2136.
+
+\bibitem[Morris et~al., 2019]{Morris2019}
+Morris, R., Stuart, S., McBarron, G., Fino, P.~C., Mancini, M., and Curtze, C.
+  (2019).
+\newblock Validity of {M}obility{L}ab (version 2) for gait assessment in young
+  adults, older adults and {P}arkinson's disease.
+\newblock {\em Physiological Measurement}, 40(9):095003.
+
+\bibitem[Nasreddine et~al., 2005]{Nasreddine2005}
+Nasreddine, Z.~S., Phillips, N.~A., B{\'e}dirian, V., Charbonneau, S.,
+  Whitehead, V., Collin, I., Cummings, J.~L., and Chertkow, H. (2005).
+\newblock The {Montreal Cognitive Assessment, MoCA}: a brief screening tool for
+  mild cognitive impairment.
+\newblock {\em Journal of the American Geriatrics Society}, 53(4):695--699.
+
+\bibitem[Nilsson et~al., 2012]{Nilsson2012}
+Nilsson, J.-O., Skog, I., H{\"a}ndel, P., and Hari, K. V.~S. (2012).
+\newblock Foot-mounted {INS} for everybody---an open-source embedded
+  implementation.
+\newblock In {\em Proceedings of the IEEE/ION Position, Location and Navigation
+  Symposium}, pages 140--145.
+
+\bibitem[Rampp et~al., 2015]{Rampp2015}
+Rampp, A., Barth, J., Sch{\"u}lein, S., Ga{\ss}mann, K.-G., Klucken, J., and
+  Eskofier, B.~M. (2015).
+\newblock Inertial sensor-based stride parameter calculation from gait
+  sequences in geriatric patients.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 62(4):1089--1097.
+
+\bibitem[Salarian et~al., 2004]{Salarian2004}
+Salarian, A., Russmann, H., Vingerhoets, F. J.~G., Dehollain, C., Blanc, Y.,
+  Burkhard, P.~R., and Aminian, K. (2004).
+\newblock Gait assessment in {P}arkinson's disease: Toward an ambulatory system
+  for long-term monitoring.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 51(8):1434--1443.
+
+\bibitem[Shrout and Fleiss, 1979]{Shrout1979}
+Shrout, P.~E. and Fleiss, J.~L. (1979).
+\newblock Intraclass correlations: Uses in assessing rater reliability.
+\newblock {\em Psychological Bulletin}, 86(2):420--428.
+
+\bibitem[Sijobert et~al., 2015]{Sijobert2015}
+Sijobert, B., Benoussaad, M., Denys, J., Pissard-Gibollet, R., Geny, C., and
+  Azevedo~Coste, C. (2015).
+\newblock Implementation and validation of a stride length estimation
+  algorithm, using a single basic inertial sensor on healthy subjects and
+  patients suffering from {P}arkinson's disease.
+\newblock {\em Health}, 7(6):704--714.
+
+\bibitem[Skog et~al., 2010]{Skog2010}
+Skog, I., H{\"a}ndel, P., Nilsson, J.-O., and Rantakokko, J. (2010).
+\newblock Zero-velocity detection---an algorithm evaluation.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 57(11):2657--2666.
+
+\bibitem[Springer et~al., 2006]{Springer2006}
+Springer, S., Giladi, N., Peretz, C., Yogev, G., Simon, E.~S., and Hausdorff,
+  J.~M. (2006).
+\newblock Dual-tasking effects on gait variability: The role of aging, falls,
+  and executive function.
+\newblock {\em Movement Disorders}, 21(7):950--957.
+
+\bibitem[Trojaniello et~al., 2014]{Trojaniello2014}
+Trojaniello, D., Cereatti, A., Pelosin, E., Avanzino, L., Mirelman, A.,
+  Hausdorff, J.~M., and Della~Croce, U. (2014).
+\newblock Estimation of step-by-step spatio-temporal parameters of normal and
+  impaired gait using shank-mounted magneto-inertial sensors: Application to
+  elderly, hemiparetic, parkinsonian and choreic gait.
+\newblock {\em Journal of NeuroEngineering and Rehabilitation}, 11(1):152.
+
+\bibitem[Verghese et~al., 2009]{Verghese2009}
+Verghese, J., Holtzer, R., Lipton, R.~B., and Wang, C. (2009).
+\newblock Quantitative gait markers and incident fall risk in older adults.
+\newblock {\em The Journals of Gerontology Series A: Biological Sciences and
+  Medical Sciences}, 64A(8):896--901.
+
+\bibitem[Wahlstr{\"o}m and Skog, 2021]{Wahlstrom2020}
+Wahlstr{\"o}m, J. and Skog, I. (2021).
+\newblock Fifteen years of progress at zero velocity: A review.
+\newblock {\em IEEE Sensors Journal}, 21(2):1139--1151.
+
+\bibitem[Washabaugh et~al., 2017]{Washabaugh2017}
+Washabaugh, E.~P., Kalyanaraman, T., Adamczyk, P.~G., Claflin, E.~S., and
+  Krishnan, C. (2017).
+\newblock Validity and repeatability of inertial measurement units for
+  measuring gait parameters.
+\newblock {\em Gait \& Posture}, 55:87--93.
+
+\bibitem[Webster et~al., 2005]{Webster2005}
+Webster, K.~E., Wittwer, J.~E., and Feller, J.~A. (2005).
+\newblock Validity of the {GAITRite} walkway system for the measurement of
+  averaged and individual step parameters of gait.
+\newblock {\em Gait \& Posture}, 22(4):317--321.
+
+\bibitem[Yogev-Seligmann et~al., 2008]{Yogev-Seligmann2008}
+Yogev-Seligmann, G., Hausdorff, J.~M., and Giladi, N. (2008).
+\newblock The role of executive function and attention in gait.
+\newblock {\em Movement Disorders}, 23(3):329--342.
+
+\end{thebibliography}

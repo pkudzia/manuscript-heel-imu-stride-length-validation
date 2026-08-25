@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ruff_cache/
+.venv/
+venv/
+outputs/
+*.aux
+*.log
+*.bbl
+!manuscript/manuscript.bbl
+*.blg
+*.out
+*.synctex.gz
+.DS_Store

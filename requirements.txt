@@ -1,0 +1,10 @@
+# Python dependencies. Versions are those used to produce the published
+# results. Tested under Python 3.13.
+numpy==2.4.2
+pandas==3.0.0
+scipy==1.17.0
+matplotlib==3.10.8
+openpyxl==3.1.5       # reading GaitRite Excel exports
+pingouin==0.6.1       # ICC and repeated-measures ANOVA
+statsmodels==0.14.6   # mixed-effects models
+python-docx==1.2.0    # PeerJ-formatted Word submission files
