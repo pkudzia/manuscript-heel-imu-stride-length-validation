@@ -49,10 +49,12 @@ scripts/
   run_stats.py                        Agreement and condition statistics
   make_figures.py                     Manuscript Figures 2 and 3
   validate_release.py                 Headline-number regression checks
-manuscript/                            LaTeX, Word, PDF, bibliography, figures
+manuscript/                            Audited LaTeX, Word, PDF, bibliography, figures
+  manuscript.{tex,pdf,docx}            Current audited manuscript set
   citations/                           Bibliography verification record
-  PEERJ_TEMPLATE_AUDIT.md              PeerJ format audit
-  SUBMISSION_CHECKLIST.md              Remaining author and upload actions
+  CITATION_AUDIT_2026-08-26.md          Final claim-level citation audit
+  SUBMISSION_CHECKLIST.md               Remaining author and upload actions
+archive/                               Superseded drafts and working files
 results_manifest.json                 Frozen results for the reviewed analysis
 ```
 
@@ -134,8 +136,8 @@ by `make_figures.py`.
 
 The LaTeX manuscript uses the official PeerJ `wlpeerj` v1.2 class. The main
 PDF retains embedded figures and tables for the LaTeX submission route. The
-editable Word copy uses display placeholders because PeerJ requests separate
-figure and table uploads for the Word submission route.
+editable Word copy contains the current Methods figure. PeerJ still receives
+the separate artwork files during submission.
 
 ## Data and citation
 
