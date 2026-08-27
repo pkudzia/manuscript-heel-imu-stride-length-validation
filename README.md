@@ -50,11 +50,13 @@ scripts/
   make_figures.py                     Manuscript Figures 2 and 3
   validate_release.py                 Headline-number regression checks
 manuscript/                            Audited LaTeX, Word, PDF, bibliography, figures
-  manuscript.{tex,pdf,docx}            Current audited manuscript set
+  manuscript.tex, manuscript.pdf        Current audited LaTeX and PDF files
+  manuscript_submission.docx            Current audited Word submission file
   citations/                           Bibliography verification record
   CITATION_AUDIT_2026-08-26.md          Final claim-level citation audit
   SUBMISSION_CHECKLIST.md               Remaining author and upload actions
 archive/                               Superseded drafts and working files
+submission_upload/                     Files organized for journal upload
 results_manifest.json                 Frozen results for the reviewed analysis
 ```
 

@@ -91,7 +91,7 @@ No new paper is required. These changes only reassign references already in the 
 ## Verification
 
 - Both canonical LaTeX copies have identical SHA-1 hashes.
-- The audited `manuscript.docx` preserves all 181 paragraphs and passes package validation against the user's edited Word file.
+- The audited `manuscript_submission.docx` preserves the audited text and passes package validation against the user's edited Word file.
 - The audited LaTeX compiles through BibTeX and three PDFLaTeX passes with no undefined citations or references.
 - The audited PDF contains 19 letter-sized pages.
 - Visual inspection of all 19 pages found no clipped figures, split tables, or interrupted sentences.
