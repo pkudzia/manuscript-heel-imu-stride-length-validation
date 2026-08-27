@@ -6,7 +6,7 @@ Upload only the files listed below. Do not upload anything from the repository a
 
 - `01_Text_Only_Manuscript/Manuscript_Text_Only.docx`
 
-This file contains the complete audited manuscript text, references, and a placeholder plus full caption for every figure, table, and algorithm. It contains no embedded figures or tables.
+This file contains the complete audited manuscript text, references, and a placeholder plus full caption for every figure, table, and algorithm. It contains no embedded figures or tables. Body paragraphs and references are justified. Titles, headings, placeholders, and captions remain left-aligned.
 
 ## Tables
 

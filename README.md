@@ -132,7 +132,7 @@ python scripts/build_supplementary_word_doc.py manuscript
 
 The Word build also requires Pandoc. Built PDF and Word review copies are
 included. The main review copies use US Letter pages, line and page numbers,
-left-aligned text, visible paragraph spacing, and intact display-caption
+justified body text, visible paragraph spacing, and intact display-caption
 blocks. `Figure1.png` is the experimental-setup artwork and is not generated
 by `make_figures.py`.
 

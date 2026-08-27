@@ -330,9 +330,12 @@ try:
             or p._p in affiliation_nodes
             or name == "Block Text"
             or text.startswith("Caption:")
+            or bool(p._p.xpath(".//m:oMathPara"))
         )
         p.paragraph_format.line_spacing = 1.0 if single_spaced else 2.0
         if single_spaced:
+            if not p._p.xpath(".//w:drawing") and not p._p.xpath(".//m:oMathPara"):
+                p.alignment = WD_ALIGN_PARAGRAPH.LEFT
             if name == "Block Text":
                 p.paragraph_format.keep_together = True
                 if text.startswith(("[FIGURE", "[TABLE", "[ALGORITHM")):
@@ -340,7 +343,7 @@ try:
             continue
         p.paragraph_format.space_after = Pt(6)
         p.paragraph_format.widow_control = True
-        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         n += 1
 
     # Remove any text highlighting or paragraph/run shading in the abstract.
@@ -407,7 +410,7 @@ try:
     doc.save(str(docx_out))
     print(
         f"Wrote {docx_out} "
-        f"(PeerJ letter layout; left-aligned {n} body paragraphs; "
+        f"(PeerJ letter layout; justified {n} body paragraphs; "
         "continuous line and page numbers)"
     )
 except ImportError:

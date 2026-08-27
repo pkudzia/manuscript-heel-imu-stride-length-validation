@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Pt
@@ -36,6 +36,13 @@ doc = Document(str(raw_path))
 author_indices = {name.strip(): indices for indices, name in authors}
 author_paragraphs = [p for p in doc.paragraphs if p.style.name == "Author"]
 for paragraph in author_paragraphs:
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    paragraph.paragraph_format.line_spacing = 1.0
+    paragraph.paragraph_format.space_after = Pt(0)
+    for run in paragraph.runs:
+        run.font.name = "Times New Roman"
+        run.font.size = Pt(12)
+        run.bold = False
     indices = author_indices.get(paragraph.text.strip())
     if indices:
         paragraph.add_run(f" [{indices}]")
@@ -47,13 +54,26 @@ for indices, affiliation in affiliations:
     if anchor is None:
         break
     paragraph = doc.add_paragraph(style="Normal")
-    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
     run = paragraph.add_run(f"{indices} {' '.join(affiliation.split())}")
     run.font.size = Pt(10)
     doc._body._body.remove(paragraph._p)
     anchor._p.addnext(paragraph._p)
     affiliation_nodes.add(paragraph._p)
     anchor = paragraph
+
+title_paragraphs = [p for p in doc.paragraphs if p.style.name == "Title"]
+for paragraph in title_paragraphs:
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    paragraph.paragraph_format.line_spacing = 1.0
+    paragraph.paragraph_format.space_after = Pt(12)
+    for run in paragraph.runs:
+        run.font.name = "Times New Roman"
+        run.font.size = Pt(12)
+        run.bold = True
+
+if anchor is not None:
+    anchor.add_run().add_break(WD_BREAK.PAGE)
 
 # Restore supplementary table numbering in captions and cross-references.
 caption_number = 0
@@ -91,18 +111,51 @@ for paragraph in doc.paragraphs:
     )
     paragraph.paragraph_format.line_spacing = 1.0 if single_spaced else 2.0
     if single_spaced:
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
         if style == "Table Caption":
             paragraph.paragraph_format.keep_with_next = True
         continue
     paragraph.paragraph_format.space_after = Pt(6)
     paragraph.paragraph_format.widow_control = True
-    paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
 # Keep table rows intact. Keep short tables on one page and repeat each header.
 table_captions = [
     paragraph for paragraph in doc.paragraphs if paragraph.style.name == "Table Caption"
 ]
+
+
+def border_element(tag):
+    border = OxmlElement(f"w:{tag}")
+    border.set(qn("w:val"), "single")
+    border.set(qn("w:sz"), "8")
+    border.set(qn("w:space"), "0")
+    border.set(qn("w:color"), "000000")
+    return border
+
+
+def insert_before_first(parent, element, later_tags):
+    later_qnames = {qn(f"w:{tag}") for tag in later_tags}
+    for index, child in enumerate(parent):
+        if child.tag in later_qnames:
+            parent.insert(index, element)
+            return
+    parent.append(element)
+
+
 for table_index, table in enumerate(doc.tables):
+    tbl_pr = table._tbl.tblPr
+    for old in tbl_pr.findall(qn("w:tblBorders")):
+        tbl_pr.remove(old)
+    tbl_borders = OxmlElement("w:tblBorders")
+    for tag in ("top", "left", "bottom", "right", "insideH", "insideV"):
+        tbl_borders.append(border_element(tag))
+    insert_before_first(
+        tbl_pr,
+        tbl_borders,
+        ("shd", "tblLayout", "tblCellMar", "tblLook", "tblCaption", "tblDescription", "tblPrChange"),
+    )
+
     keep_table_together = len(table.rows) <= 12
     if 8 <= len(table.rows) <= 12:
         table_captions[table_index].paragraph_format.page_break_before = True
