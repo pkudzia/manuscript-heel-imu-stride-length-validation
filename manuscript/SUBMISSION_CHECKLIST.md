@@ -7,7 +7,7 @@
 - [x] Main manuscript Word file with PeerJ page, font, alignment, line-number, and page-number settings
 - [x] Supplementary source, PDF, and Word file
 - [x] Optional cover letter source and PDF
-- [x] Three manuscript figures in separate, journal-ready artwork files
+- [x] Three manuscript figures and Algorithm 1 in separate, journal-ready artwork files
 - [x] Figure captions file
 - [x] Co-author feedback response log
 - [x] Numerical check against the frozen 10,472-stride output
