@@ -20,7 +20,7 @@
 
 ## Paul or co-authors must complete
 
-- [ ] Replace the prospective Data Availability statement with the final Zenodo DOI and GitHub URL.
+- [ ] Populate and publish the Borealis dataset, make the GitHub repository public, and change the Data Availability statement to present tense.
 - [ ] Confirm the public repository licence.
 - [ ] Obtain final approval from every author for the revised manuscript and cover letter.
 - [ ] Confirm author spelling, order, affiliations, and contribution statements.

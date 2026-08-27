@@ -146,6 +146,7 @@ the separate artwork files during submission.
 The recordings are APDM Opal IMUs sampled at 256 Hz, with one unit clipped to
 the posterolateral heel of each shoe, and a synchronized GaitRite reference.
 This private staging repository excludes raw recordings and derived
-participant-level output tables. The data availability statement and final
-citation should be updated with the public repository URL and DOI after public
-deposition.
+participant-level output tables. Borealis has reserved DOI
+`10.5683/SP4/7YSHYF` for the data deposit. The prospective Data Availability
+statement must change to present tense after the dataset and GitHub repository
+become public.
