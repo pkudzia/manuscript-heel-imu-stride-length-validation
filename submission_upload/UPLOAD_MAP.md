@@ -17,6 +17,12 @@ This file contains the complete audited manuscript text, references, and a place
 
 Each table is editable, has explicit black cell borders, and is stored in a separate Word file.
 
+Upload these files using the **Table** designation. If the portal requests an
+`.eps` extension, remove that upload row and create a new Table row. An EPS
+request means the portal classified the file as vector artwork rather than an
+editable table. Do not rename a DOCX file or use the EPS derivative as the
+primary table.
+
 ## High-resolution figures and algorithm
 
 - `03_Figures/Figure1_Methods.png` at 2481 × 1612 pixels and 300 dpi

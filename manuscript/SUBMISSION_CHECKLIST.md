@@ -20,7 +20,9 @@
 
 ## Paul or co-authors must complete
 
-- [ ] Populate and publish the Borealis dataset, make the GitHub repository public, and change the Data Availability statement to present tense.
+- [ ] Upload the validated aggregate-results package to the Borealis draft and submit it for curation.
+- [ ] Make the GitHub repository public after removing archives and confirming that no participant-level data are tracked.
+- [x] Correct the Data Availability statement to match protocol H22-00451. Participant-level data will not be stored on the web without UVic REB authorization.
 - [ ] Confirm the public repository licence.
 - [ ] Obtain final approval from every author for the revised manuscript and cover letter.
 - [ ] Confirm author spelling, order, affiliations, and contribution statements.

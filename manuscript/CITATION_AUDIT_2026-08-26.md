@@ -2,6 +2,12 @@
 
 Date: 2026-08-26
 
+## Post-audit update, 2026-08-28
+
+- Added Awad et al. (2017) and Awad et al. (2023) to the Discussion limitation on generalisation to post-stroke gait.
+- Awad et al. (2017) supports the statement about compensatory movements. Awad et al. (2023) supports the statement about speed-dependent changes in stability.
+- Verified both DOI records against Crossref. The manuscript now renders 37 cited references.
+
 ## Scope and status
 
 - Audited every citation-supported claim in the final manuscript against the cited source.

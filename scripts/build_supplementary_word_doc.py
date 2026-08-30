@@ -153,7 +153,15 @@ for table_index, table in enumerate(doc.tables):
     insert_before_first(
         tbl_pr,
         tbl_borders,
-        ("shd", "tblLayout", "tblCellMar", "tblLook", "tblCaption", "tblDescription", "tblPrChange"),
+        (
+            "shd",
+            "tblLayout",
+            "tblCellMar",
+            "tblLook",
+            "tblCaption",
+            "tblDescription",
+            "tblPrChange",
+        ),
     )
 
     keep_table_together = len(table.rows) <= 12
