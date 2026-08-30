@@ -29,10 +29,10 @@ available walks. Failed alignment is never replaced with a zero-offset
 fallback, and participant-condition records are not removed because their
 stride-length error is large.
 
-The frozen headline values are recorded in `results_manifest.json`. The raw
-recordings are not included in this release. Participants appear in every
-output under de-identified study codes (`ID_NNN`), matching the labels in the
-manuscript and supplement.
+The frozen headline values are recorded in `results_manifest.json`. This
+GitHub repository contains no participant-level recordings. The separate
+Borealis publication package uses de-identified study codes (`ID_NNN`) and
+contains only the bilateral heel data required to reproduce the analysis.
 
 ## Repository layout
 
@@ -72,8 +72,9 @@ pip install -r requirements.txt
 
 ## Run the primary pipeline
 
-The data root must contain `IMU Data`, `GaitRite Data`, and
-`Time Sychng Information Data` using the study export layout.
+The public data root must contain `IMU Data`, `GaitRite Data`, and
+`Synchronization Data`. The scripts also accept the legacy source-directory
+name `Time Sychng Information Data`.
 
 ```bash
 python scripts/run_pipeline.py \
@@ -145,11 +146,14 @@ the separate artwork files during submission.
 
 The recordings are APDM Opal IMUs sampled at 256 Hz, with one unit clipped to
 the posterolateral heel of each shoe, and a synchronized GaitRite reference.
-This private staging repository excludes raw recordings and derived
-participant-level output tables. The approved ethics protocol restricts
-de-identified data access to approved research personnel and does not permit
-web storage of participant data. Borealis has reserved DOI
-`10.5683/SP4/7YSHYF` for an aggregate-results deposit. The deposit contains no
-participant-level records, study codes, collection dates, or sensor signals.
+This private staging repository excludes all participant-level recordings and
+derived participant-level output tables. Borealis has reserved DOI
+[`10.5683/SP4/7YSHYF`](https://doi.org/10.5683/SP4/7YSHYF) for the separate
+de-identified publication dataset. The prepared package contains 32
+participant archives with 128 bilateral heel IMU CSV files, 126 synchronization
+CSV files, 897 cleaned GaitRite workbooks, metadata, and documentation. It
+excludes sacrum data, source identifiers, collection dates, linkage files,
+TDMS files, and HDF5 files. The Borealis dataset and this GitHub repository
+will become public upon publication.
 
 See `DATA_ACCESS.md` for the release boundary and repository responsibilities.

@@ -55,13 +55,8 @@ from config import (
     GR_ST_MIN_S,
     INVERT_LEFT_GYRO,
     INVERT_RIGHT_GYRO,
-    LEFT_ACCEL_COLS,
-    LEFT_GYRO_COLS,
-    LEFT_GYRO_Z_COL,
-    RIGHT_ACCEL_COLS,
-    RIGHT_GYRO_COLS,
-    RIGHT_GYRO_Z_COL,
     SAMPLING_FREQ,
+    imu_column_layout,
     subject_code,
 )
 from gait_events import AdaptiveThresholdDetector
@@ -90,13 +85,19 @@ def imu_path(subject, cond_code):
 
 
 def gr_pulse_path(subject, cond_code):
-    base = os.path.join(BASE_DIR, "Time Sychng Information Data", subject)
-    # Try short code first (e.g. _UL_), then folder name (e.g. _Unloaded_)
-    for label in [cond_code, CONDITIONS[cond_code][0]]:
-        path = os.path.join(base, f"{subject}_{label}_GR_Pulse.csv")
-        if os.path.exists(path):
-            return path
-    return os.path.join(base, f"{subject}_{cond_code}_GR_Pulse.csv")
+    for directory in ["Synchronization Data", "Time Sychng Information Data"]:
+        base = os.path.join(BASE_DIR, directory, subject)
+        # Try short code first (e.g. _UL_), then folder name (e.g. _Unloaded_)
+        for label in [cond_code, CONDITIONS[cond_code][0]]:
+            path = os.path.join(base, f"{subject}_{label}_GR_Pulse.csv")
+            if os.path.exists(path):
+                return path
+    return os.path.join(
+        BASE_DIR,
+        "Synchronization Data",
+        subject,
+        f"{subject}_{cond_code}_GR_Pulse.csv",
+    )
 
 
 def gaitrite_dir(subject, cond_code):
@@ -117,6 +118,7 @@ def load_imu_csv(filepath):
     accel/gyro for ZUPT.
     """
     df = pd.read_csv(filepath, skiprows=3, header=None)
+    layout = imu_column_layout(df.shape[1])
 
     time_us = df.iloc[:, 0].values
     time_s = (time_us - time_us[0]) / 1e6
@@ -138,8 +140,8 @@ def load_imu_csv(filepath):
                     f">2% in {os.path.basename(filepath)}"
                 )
 
-    right_gyro_z = df.iloc[:, RIGHT_GYRO_Z_COL].values
-    left_gyro_z = df.iloc[:, LEFT_GYRO_Z_COL].values
+    right_gyro_z = df.iloc[:, layout["right_gyro_z"]].values
+    left_gyro_z = df.iloc[:, layout["left_gyro_z"]].values
 
     # Sign convention for HS detection only. Do NOT propagate to the
     # 3-axis arrays loaded below: a single-axis flip would create a
@@ -161,13 +163,10 @@ def load_imu_csv(filepath):
         "fs": fs_observed,
     }
 
-    ncols = df.shape[1]
-    if max(RIGHT_ACCEL_COLS + RIGHT_GYRO_COLS) < ncols:
-        result["right_accel_3ax"] = df.iloc[:, RIGHT_ACCEL_COLS].values
-        result["right_gyro_3ax"] = df.iloc[:, RIGHT_GYRO_COLS].values
-    if max(LEFT_ACCEL_COLS + LEFT_GYRO_COLS) < ncols:
-        result["left_accel_3ax"] = df.iloc[:, LEFT_ACCEL_COLS].values
-        result["left_gyro_3ax"] = df.iloc[:, LEFT_GYRO_COLS].values
+    result["right_accel_3ax"] = df.iloc[:, layout["right_accel"]].values
+    result["right_gyro_3ax"] = df.iloc[:, layout["right_gyro"]].values
+    result["left_accel_3ax"] = df.iloc[:, layout["left_accel"]].values
+    result["left_gyro_3ax"] = df.iloc[:, layout["left_gyro"]].values
 
     return result
 

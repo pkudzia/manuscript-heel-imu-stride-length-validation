@@ -33,6 +33,31 @@ RIGHT_GYRO_COLS = [4, 5, 6]
 LEFT_ACCEL_COLS = [29, 30, 31]
 LEFT_GYRO_COLS = [32, 33, 34]
 
+
+def imu_column_layout(column_count):
+    """Return sensor columns for source or public heel-only IMU files."""
+    if column_count == 43:
+        return {
+            "right_accel": RIGHT_ACCEL_COLS,
+            "right_gyro": RIGHT_GYRO_COLS,
+            "right_gyro_z": RIGHT_GYRO_Z_COL,
+            "left_accel": LEFT_ACCEL_COLS,
+            "left_gyro": LEFT_GYRO_COLS,
+            "left_gyro_z": LEFT_GYRO_Z_COL,
+        }
+    if column_count == 29:
+        return {
+            "right_accel": [1, 2, 3],
+            "right_gyro": [4, 5, 6],
+            "right_gyro_z": 6,
+            "left_accel": [15, 16, 17],
+            "left_gyro": [18, 19, 20],
+            "left_gyro_z": 20,
+        }
+    raise ValueError(
+        f"Unsupported IMU schema with {column_count} columns. Expected 43 or 29."
+    )
+
 # Polarity convention: invert left foot Z gyro so both feet share a
 # common sign convention for heel-strike detection. Applied ONLY to the
 # 1D filtered Z signal used by detectors. The 3-axis arrays consumed by

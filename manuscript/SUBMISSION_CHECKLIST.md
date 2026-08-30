@@ -20,12 +20,12 @@
 
 ## Paul or co-authors must complete
 
-- [ ] Upload the validated aggregate-results package to the Borealis draft and submit it for curation.
+- [ ] Upload the validated de-identified participant-level heel-only package to the Borealis draft and submit it for curation.
 - [ ] Make the GitHub repository public after removing archives and confirming that no participant-level data are tracked.
-- [x] Correct the Data Availability statement to match protocol H22-00451. Participant-level data will not be stored on the web without UVic REB authorization.
+- [x] Correct the Data Availability statement to identify the participant-level heel-only Borealis release and the public GitHub repository.
 - [ ] Confirm the public repository licence.
 - [ ] Obtain final approval from every author for the revised manuscript and cover letter.
 - [ ] Confirm author spelling, order, affiliations, and contribution statements.
-- [ ] Confirm the cover letter statements on competing interests and funding if uploading the optional letter.
+- [x] Synchronize the cover letter statements on competing interests, funding, ethics, and data availability.
 - [ ] Supply Sandra Hundza's submitted-paper BibTeX entry if it belongs in this manuscript.
 - [ ] Enter journal-system metadata and upload the separate artwork and supplement.
