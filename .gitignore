@@ -12,3 +12,4 @@ outputs/
 *.out
 *.synctex.gz
 .DS_Store
+.gstack/
