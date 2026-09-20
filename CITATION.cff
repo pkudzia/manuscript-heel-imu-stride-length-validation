@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this software release and cite the Borealis dataset separately."
+type: software
+title: "Heel-mounted IMU stride-length validation"
+version: 1.0.1
+doi: "10.5281/zenodo.22864067"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22863826"
+    description: "Concept DOI that always resolves to the latest archived version"
+date-released: 2026-09-20
+license: MIT
+repository-code: "https://github.com/pkudzia/manuscript-heel-imu-stride-length-validation"
+url: "https://github.com/pkudzia/manuscript-heel-imu-stride-length-validation/releases/tag/v1.0.1"
+authors:
+  - family-names: Kudzia
+    given-names: Pawel
+  - family-names: von Hacht
+    given-names: Markus
+  - family-names: Sheikhi
+    given-names: Maryam
+  - family-names: Commandeur
+    given-names: Drew
+  - family-names: Klimstra
+    given-names: Marc
+  - family-names: Hundza
+    given-names: Sandra
