@@ -1,0 +1,46 @@
+{
+  "analysis_date": "2026-08-10",
+  "reported_conditions": ["UL", "L2", "L3", "L7"],
+  "participants": {
+    "enrolled": 33,
+    "analysed": 32,
+    "female": 24,
+    "male": 8,
+    "cn": 19,
+    "mci": 13
+  },
+  "walk_alignment": {
+    "available": 1764,
+    "passed": 1669,
+    "failed": 95,
+    "minimum_match_ratio": 0.6,
+    "match_tolerance_ms": 150,
+    "failures_by_condition": {
+      "UL": 14,
+      "L2": 13,
+      "L3": 19,
+      "L7": 49
+    }
+  },
+  "stride_pairs": {
+    "total": 10472,
+    "by_condition": {
+      "UL": 2544,
+      "L2": 2618,
+      "L3": 2770,
+      "L7": 2540
+    }
+  },
+  "pooled_stride_length": {
+    "rmse_m": 0.038625,
+    "mae_m": 0.024964,
+    "bias_m": 0.002614,
+    "icc_2_1": 0.975779
+  },
+  "source_outputs": {
+    "primary": "paper1/outputs/2026-08-10_alignment_qc_primary",
+    "bilateral_comparison": "paper1/outputs/2026-08-10_alignment_qc_contra",
+    "correction_ablation": "paper1/outputs/2026-08-10_alignment_qc_ablation",
+    "heel_strike_anchor": "paper1/outputs/2026-08-10_alignment_qc_hs_anchor"
+  }
+}
