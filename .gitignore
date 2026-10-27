@@ -15,3 +15,13 @@ outputs/
 .gstack/
 .pytest_cache/
 dist/
+
+# Local AI assistant instructions and state
+[Aa][Gg][Ee][Nn][Tt].[Mm][Dd]
+[Aa][Gg][Ee][Nn][Tt][Ss].[Mm][Dd]
+[Cc][Ll][Aa][Uu][Dd][Ee].[Mm][Dd]
+[Cc][Oo][Dd][Ee][Xx].[Mm][Dd]
+.agents/
+.claude/
+.codex/
+.wolf/

@@ -143,11 +143,3 @@ Cite the code with [CITATION.cff](CITATION.cff), and cite the
 [Borealis data DOI](https://doi.org/10.5683/SP4/7YSHYF) separately.
 
 The code is [MIT licensed](LICENSE). That licence does not relicense the data.
-
-<!-- local-workspace-location -->
-## Local workspace
-
-The organized local checkout lives at `~/Documents/Github/academic/paper-heel-imu-stride-length`.
-Read `AGENTS.md` for repository instructions. `CLAUDE.md` and `CODEX.md` point to the same workflow.
-Shared academic defaults live in `../../shared/knowledge/academic/AGENTS.md` when the knowledge vault is available. Project-specific methods and journal requirements remain here.
-This local grouping does not change the GitHub repository name or remote URL.
